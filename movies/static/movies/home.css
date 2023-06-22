@@ -1,0 +1,214 @@
+body {
+    background-color: rgb(0, 4, 23);
+    /* background-image: linear-gradient(260deg, #012635 0%, #053219 100%); */
+    color: aliceblue;
+    /* background-image: url('static/blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+}
+
+.text-style {
+    color: aliceblue;
+    font-family: sans-serif;
+
+}
+
+.heading {
+    padding: 18px;
+    font-family: sans-serif;
+    color: aliceblue;
+
+}
+
+#content {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 8px;
+
+}
+
+.card {
+    width: 18rem;
+    background-image: linear-gradient(260deg, #88dcc7 0%, #a2f9b9 100%);
+    height: 16.5rem;
+    /* border-radius: 10px; */
+    /* border-color: rgb(0, 121, 30); */
+    border-width: 2px;
+    margin: 2px;
+    /* padding: .2rem; */
+    transition: transform 0.4s ease;
+    cursor: grab;
+    box-shadow: 2px 0px 2px 0px rgba(0, 255, 225, 0.81) inset,
+        -2px -2px 2px 0px rgba(5, 255, 105, 0.741) inset,
+        2px -2px 2px 0px rgba(0, 204, 255, 0.762) inset,
+        -2px 2px 2px 0px rgba(0, 255, 229, 0.727) inset;
+}
+
+
+.card-img-top {
+    width: inherit;
+    object-fit: cover;
+}
+
+.card-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    place-items: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    place-items: center;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 
+  .btn {
+    border-radius: 20px;
+    min-width: 150px;
+  }
+*/
+
+
+.btn {
+    padding: 6px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-success {
+    color: rgb(0, 0, 0);
+    background-color: #07e9c3;
+    border: 2px solid #00fe94;
+    border-radius: 20px;
+}
+
+.btn-success:hover {
+    color: rgb(0, 0, 0);
+    background-color: #07e9c3;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    /* box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2),
+      0 0px 10px rgb(6, 246, 186),
+      0 0px 10px rgba(0, 255, 166, 0.956); */
+    box-shadow: white;
+}
+
+.slideshow {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+
+}
+
+.slideshow .movie-poster {
+    width: 100rem;
+    /* Adjust the width as needed */
+    height: 30rem;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+
+
+/* .slideshow {
+position: relative;
+} */
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 10%;
+    transform: translateY(-10%);
+    font-size: 44px;
+    background: none;
+    border: none;
+    color: rgb(0, 255, 217);
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+.card-footer {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-footer {
+    opacity: 1;
+}
+
+.card:hover {
+    filter: brightness(80%);
+    /* box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2),
+      0 0px 10px rgb(6, 246, 186),
+      0 0px 10px rgba(0, 255, 166, 0.956); */
+    /* Add box shadow with increased visibility */
+}
+
+
+/* making card buttons hidden and alligned in center  */
+.card .btn-custom {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .btn-custom {
+    visibility: visible;
+    opacity: 1;
+    filter: brightness(100%);
+
+    /* Set button brightness to 100% */
+}
+
+
+/* 
+making card button hidden  for next movies  */
+.card .btn-custom2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.card:hover .btn-custom2 {
+    visibility: visible;
+    opacity: 1;
+    filter: brightness(100%);
+    /* Set button brightness to 100% */
+    padding-left: 33px;
+    padding-right: 33px;
+}

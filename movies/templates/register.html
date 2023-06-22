@@ -1,0 +1,106 @@
+{% extends 'login.html' %}
+{% block title %} register {% endblock %}
+<style>
+
+</style>
+
+{% block content %}
+
+<div class="wrapper">
+    <center>
+        <div class="container-fluid-register">
+            <div class="contentss">
+
+                <div class="text-style" style="margin-bottom: 30px;">
+                    <h1>Register Here</h1>
+                </div>
+                {% if messages %}
+                {% for message in messages %}
+                    <div id="message" style="color: white; z-index: 2; position: relative;">{{ message }}</div>
+                {% endfor %}
+            {% endif %} <br>
+                <div class="row">
+                    <div class="col-mod-4" style="margin: 0 auto;">
+                        <form method="post" action="">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label class="text-style">
+                                    <h6>Username</h6>
+                                </label>
+                                <input type="text" name="username" class="form-control" style="width: 30;">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="text-style">
+                                    <h6>Email</h6>
+                                </label>
+                                <input type="email" name="email" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="text-style">
+                                    <h6>Password</h6>
+                                </label>
+                                <input type="password" name="password" class="form-control">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="text-style">
+                                    <h6> Confirm Password</h6>
+                                </label>
+                                <input type="password" name="confirmation" class="form-control">
+                            </div>
+                            <div class="inputBox">
+                                <select name="city" id="citySelect" required>
+                                    <option value="" selected disabled>Select a City</option>
+                                    {% for city in cities %}
+                                        <option value="{{city.name}}">{{ city.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-success"
+                                style="width:300px;border-radius: 20px ;margin-top: 20px;">Submit</button><br><br>
+
+                            <p style="color: white;">Already have an account?</p>
+                            <a href="{% url 'login' %}" style="color: rgb(255, 255, 255);"><u>Login Here</u></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+    </center>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>This is the project developed using python.</p>
+            <p>Supervisor: Sabin Adhikari</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/xandesh.kandell.1/"><i class="fab fa-facebook">facebbok</i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 MovieTicket. All rights reserved.</p>
+    </div>
+</footer>
+
+</div> <!-- class wrapper -->
+{% endblock %}

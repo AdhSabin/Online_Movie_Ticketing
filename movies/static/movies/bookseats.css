@@ -1,0 +1,100 @@
+/* CSS styles for the page */
+body {
+    background-color: rgb(0, 4, 23);
+    color: aliceblue;
+
+}
+
+
+.container {
+    padding-left: 10px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: rgb(63, 195, 154);
+    border: 2px solid rgb(25, 25, 27);
+    display: inline-block;
+    padding-left: 12px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 10px 14px 10px 14px;
+
+}
+
+.selected {
+    background-color: rgb(216, 53, 53);
+}
+
+.checkbox {
+    transform: scale(1.7);
+}
+
+.checkbox:hover {
+    background-color: rgb(6, 38, 55);
+    cursor: pointer;
+    transform: scale(2.00);
+    box-shadow: 0px 0px 25px rgb(255, 255, 255);
+
+}
+
+/* button */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-success {
+    color: #000000;
+    background-color: #07e8be;
+    border: 2px solid #28a745;
+}
+
+.btn-success:hover {
+    color: rgb(0, 0, 0);
+    color: #1ec7c5;
+
+}
+
+.shifts {
+    margin-right: 35px;
+    font-size: large;
+
+}
+
+.radio {
+    transform: scale(1.7);
+    margin-right: 6px;
+}
+
+.radio:hover {
+    cursor: pointer;
+    transform: scale(2.10);
+    box-shadow: 0px 0px 13px rgb(6, 6, 6);
+}
+
+label {
+    color: white;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+.movieBanner {
+    padding: 15px;
+}
+
+.small-image {
+    width: 220px;
+    height: 240px;
+    border-radius: 20px;
+    border: 2px solid #07e8be;
+}

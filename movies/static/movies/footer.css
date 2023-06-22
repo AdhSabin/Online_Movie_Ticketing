@@ -1,0 +1,82 @@
+/* Footer styles */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    font-weight: bold;
+    /* padding-top: 30px; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.footer-section p {
+    margin: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    color: rgb(169, 249, 255);
+    font-size: 20px;
+}
+
+.footer-bottom {
+    background-color: rgb(29, 29, 29);
+    color: aliceblue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 5px;
+}
+
+/* Additional styles to cover the whole screen */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.contentss {
+    padding-bottom: 180px;
+    /* Leave space for the footer */
+    margin-bottom: 50px;
+    /* Increase the margin */
+    /* Adjust this value to leave space for the footer */
+}
+
+p {
+    margin-bottom: 30px;
+}

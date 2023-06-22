@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(0, 4, 23);
+    /* background-image: url('static/blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+}
+
+.form-control {
+    background-color: rgb(210, 249, 255);
+    /* padding: 20px; */
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(173, 212, 251);
+    width: 300px;
+
+
+}
+
+.form-control:focus {
+    border-color: rgb(177, 211, 235);
+    background-color: rgb(212, 243, 252);
+
+}
+
+.form-group {
+    -webkit-margin-bottom-collapse: 28px;
+}
+
+.container-fluid-login {
+    border: 1.7px solid rgb(254, 247, 247);
+    padding: 10px;
+    width: 400px;
+    height: 470px;
+    border-color: rgb(3, 136, 3);
+    border-radius: 60px;
+    /* background-color: rgb(1, 14, 40); */
+    margin-top: 75px;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2),
+        0 0px 10px rgb(6, 246, 186),
+        0 0px 10px rgba(0, 255, 166, 0.956);
+
+
+}
+
+.container-fluid-register {
+    border: 1.7px solid rgb(254, 247, 247);
+    padding: 10px;
+    width: 400px;
+    height: 630px;
+    border-color: rgb(3, 136, 3);
+    border-radius: 60px;
+    /* background-color: rgb(1, 14, 40); */
+    margin-top: 75px;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2),
+        0 0px 10px rgb(6, 246, 186),
+        0 0px 10px rgba(0, 255, 166, 0.956);
+    /* justify-content: center;
+    align-items: center; */
+
+
+}
+
+.form-container label,
+.form-container input {
+    display: block;
+
+}
+
+.text-style {
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    color: azure;
+
+}
+
+
+
+
+
+
+.btn {
+    padding: 6px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success {
+    color: #000000;
+    background-color: #00fcb9;
+    border: 2px solid #00fe94;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    color: rgb(0, 0, 0);
+    background-color: #07e9c3;
+}
+
+/* 
+  center {
+    margin-top: 1px;
+  } */
